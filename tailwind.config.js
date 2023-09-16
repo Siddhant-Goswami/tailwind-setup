@@ -30,9 +30,9 @@ module.exports = {
       },
     },
     fontSize: {
-      base: "1rem",
+      "base": "1rem",
       "5xl": "1.5rem",
-      inherit: "inherit",
+      "inherit": "inherit",
     },
   },
   corePlugins: {
