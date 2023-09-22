@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Twitter UI</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+    />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black">
-    <!-- Button component -->
-    <section>
+
+  <body class="text-white bg-black">
+    <main class="flex flex-col justify-center text-neutral-50 font-px-regular">
+      <div
+        class="flex flex-col items-start justify-start gap-[0.75rem] text-[1.94rem]"
+      >
+        <div class="font-extrabold">Happening now</div>
+        <div class="text-[1rem] font-medium">Join today.</div>
+      </div>
       <button
-        class="w-80 px-6 py-2 rounded-3xl shadow backdrop-blur-2xl justify-center items-center gap-2.5 inline-flex"
+        class="w-80 px-6 py-2 rounded-3xl shadow backdrop-blur-2xl justify-center items-center gap-2.5"
       >
         <div class="text-center text-black text-base font-bold font-['Inter']">
           Create account
         </div>
       </button>
-    </section>
-
-    <!-- Button component -->
-    <section class="py-8">
-      <button
-        class="w-80 px-6 py-2 rounded-3xl shadow backdrop-blur-2xl justify-center items-center gap-2.5 inline-flex"
+      <div
+        class="flex flex-row items-center justify-center gap-[0.25rem] text-center font-chirp"
       >
-        <img src="/public/images/google.svg" alt="google logo" />
-        <div class="text-center text-black text-base font-bold font-['Inter']">
-          Signup with google
-        </div>
-      </button>
-    </section>
+        <div
+          class="flex-1 h-[0.06rem] border-t-[1px] border-solid border-neutral-700"
+        ></div>
+        <div>or</div>
+        <div
+          class="flex-1 h-[0.06rem] border-t-[1px] border-solid border-neutral-700"
+        ></div>
+      </div>
+      <div
+        class="flex flex-col items-start justify-start gap-[1.25rem] text-[0.94rem]"
+      >
+        <div>Already have an account?</div>
+        <button
+          class="flex flex-row py-[0.5rem] px-[1.5rem] items-center justify-center text-center text-[1rem] text-twtr-blue-default border-[1px] border-solid border-stroke rounded-46xl shadow-[0px_8px_16px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(47.34px)]"
+        >
+          Sign up
+        </button>
+      </div>
+    </main>
   </body>
 </html>
